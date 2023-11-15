@@ -5,6 +5,8 @@ alias so="source ~/.zshrc"
 alias vi="vim"
 alias vz="vim ~/.hoskim-conf/.zshrc"
 alias vssh="vim ~/.ssh/config"
+alias vgit="vim $HOME/.gitconfig"
+alias vgitignore="vim $HOME/.gitignore"
 
 # User specific functions
 ff()   { grep -Rnw . -e "$1"; }
