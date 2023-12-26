@@ -1,10 +1,19 @@
+# Quadminers
+RTE_SDK=$HOME/qm_dpdk/dpi_lib/dpdk-19.11
+export RTE_SDK
+RTE_TARGET=build
+export RTE_TARGET
+
+# environment variables
+export LANG=en_US.UTF-8
+export PATH=".:$HOME/bin:$PATH"
 
 # User specific alias
 alias h="history"
-alias so="source ~/.zshrc"
-alias vi="vim"
-alias vz="vim ~/.hoskim-conf/.zshrc"
-alias vssh="vim ~/.ssh/config"
+alias so="source $HOME/.hoskim-config/.zshrc"
+alias vi="vim -u $HOME/.hoskim-config/.vimrc"
+alias vz="vim $HOME/.hoskim-config/.zshrc"
+alias vssh="vim $HOME/.ssh/config"
 alias vgit="vim $HOME/.gitconfig"
 alias vgitignore="vim $HOME/.gitignore"
 
